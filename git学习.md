@@ -6,7 +6,7 @@
     git commit -m "[你的提交信息]"
 
     // git 上传
-    git push
+    git push -u origin [分支名称]
 
     // 查看状态
     git status

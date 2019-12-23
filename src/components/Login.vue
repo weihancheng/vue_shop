@@ -72,10 +72,10 @@ export default {
     login () {
       this.$refs.loginFormRef.validate(async valid => {
         if (!valid) return
-        const { data: res } = await this.$http.post('login', this.loginForm)
-        if (res.data.status !== 200) return this.$message.error('登录失败!')
-        this.$message.success('登录成功!')
-        window.sessionStorage.setItem('token', res.data.token)
+        // const { data: res } = await this.$http.post('login', this.loginForm)
+        // if (res.data.status !== 200) return this.$message.error('登录失败!')
+        // this.$message.success('登录成功!')
+        // window.sessionStorage.setItem('token', res.data.token)
         this.$router.push('/home')
       })
     }
